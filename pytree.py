@@ -56,9 +56,6 @@ def printTree(path):
 
 #main
 if __name__ == '__main__':
-# just for demo
-	#subprocess.run(['tree'] + sys.argv[1:])
-
     #error check
     if (len(sys.argv) > 2):
         print("Invalid.")
