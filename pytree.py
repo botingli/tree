@@ -36,6 +36,7 @@ def buildTree(curPath, prefix):
             FileNum += tempFileNum
     return dirNum, FileNum
 
+
 def printTree(path):
     print(path)
 
@@ -54,14 +55,16 @@ def printTree(path):
     print(str(Numdir) + dirName + str(Numfile) + fileName)
     return
 
-#main
+
 if __name__ == '__main__':
     #error check
     if (len(sys.argv) > 2):
         print("Invalid.")
         sys.exit()
 
-    if len(sys.argv) == 2:
-        printTree(sys.argv[1])
+    elif len(sys.argv) == 2:
+    	printTree(sys.argv[1])
     else:
-    	printTree('.')		#by default, open root directry
+    	printTree('.')
+    #by default, open root directry
+    
