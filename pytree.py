@@ -5,6 +5,8 @@ import os
 import string
 
 # YOUR CODE GOES here
+
+
 def buildTree(curPath, prefix):
     files = []
     for fileName in os.listdir(curPath):
@@ -34,8 +36,6 @@ def buildTree(curPath, prefix):
             FileNum += tempFileNum
     return dirNum, FileNum
 
-
-
 def printTree(path):
     print(path)
 
@@ -52,21 +52,19 @@ def printTree(path):
         fileName = " file"
 
     print(str(Numdir) + dirName + str(Numfile) + fileName)
-
-
+    return
 
 #main
 if __name__ == '__main__':
-    # just for demo
-    #subprocess.run(['tree'] + sys.argv[1:])
+# just for demo
+	#subprocess.run(['tree'] + sys.argv[1:])
 
     #error check
     if (len(sys.argv) > 2):
         print("Invalid.")
         sys.exit()
 
-   
     if len(sys.argv) == 2:
-        printTree(sys.argv[1]);
+        printTree(sys.argv[1])
     else:
-    	printTree('.');		#by default, open root directry
+    	printTree('.')		#by default, open root directry
