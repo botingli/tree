@@ -57,7 +57,7 @@ def printTree(path):
 
 
 if __name__ == '__main__':
-    #error check
+    # error check
     if (len(sys.argv) > 2):
         print("Invalid.")
         sys.exit()
@@ -66,5 +66,4 @@ if __name__ == '__main__':
     	printTree(sys.argv[1])
     else:
     	printTree('.')
-    #by default, open root directry
-    
+    # by default, open root directry
